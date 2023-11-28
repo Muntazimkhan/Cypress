@@ -26,8 +26,8 @@ describe("Create Project ", () => {
     cy.get("#new-keyword").type("American History");
 
     cy.get("#new-keyword-context").type("American History description");
-    let dropdwon = "#from-keyword-section div div:nth-child(4)";
-    cy.get(dropdwon).click();
+    let dropdown = "#from-keyword-section div div:nth-child(4)";
+    cy.get(dropdown).click();
     cy.get("ul#select2-new-keyword-word-count-results li:nth-child(3)").click();
 
     //  cy.contains('Customize Brief').click()

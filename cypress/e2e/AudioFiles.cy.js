@@ -16,17 +16,17 @@ describe('Create Project ', () => {
 
         cy.get('#project_6986').contains('Artificial Intelligence').click({ force: true })
 
-        cy.get('.project-content-btn .cs-secondary-btn ').click({ force: true })
+        cy.get('.project-content-btn.cs-secondary-btn').click({ force: true })
 
-        cy.get('.from-doc').click({ force: true })
+        cy.get('.from-file').click({ force: true })
 
         cy.get('.cs-secondary-btn.next-content').click()
 
-        // cy.get('input#content-from-doc-file').click()
+        cy.get('input#content-from-custom-url').type('https://player.fm/series/30758/381599764')
 
-        cy.get('input#n#new-doc-keyword').type('Files')
+        cy.get('input#new-audio-keyword').type('Talking Cars')
 
-        cy.get('textarea#new-doc-post-context').type('Additional Context')
+        cy.get('textarea#new-audio-url-context').type('Additional Context')
 
 
         // cy.contains('Write Post Now').click()

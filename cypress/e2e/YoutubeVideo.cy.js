@@ -26,6 +26,10 @@ describe('Create Project ', () => {
 
         cy.get('input#new-youtube-keyword').type('Youtube Video Description')
 
+        let dropDown = "div#from-youtube-section div div div:nth-child(3)";
+        cy.get(dropDown);
+        cy.get('.select2-dropdown.select2-dropdown--below li:nth-child(3)').click()
+
         cy.get('textarea#new-youtube-url-context').type('Additional Youtube Video context')
 
 

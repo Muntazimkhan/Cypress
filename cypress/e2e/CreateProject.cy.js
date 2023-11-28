@@ -25,9 +25,23 @@ describe('Create Project ', () => {
         cy.get('#monthly-post-count').type(5)
 
         cy.get('#target-audience').type('Students')
-        cy.get("#select2-tone-of-voice-container").as('dropdwon')
-        cy.get('@dropdwon').click()
-        cy.contains("Witty").click({ force: true })
+
+        let TOVdropdown = ".project-fields.mx-auto div div:nth-child(6)";
+        cy.get(TOVdropdown).click()
+        cy.get('.select2-results__option.select2-results__option--group li:nth-child(7)').click()
+
+        let Languagedropdown = ".project-fields.mx-auto div div:nth-child(7)";
+        cy.get(Languagedropdown).click()
+        cy.get('.select2-dropdown.select2-dropdown--above li:nth-child(25)').click()
+
+        let Wordcountdropdown = ".project-fields.mx-auto div div:nth-child(8)";
+        cy.get(Wordcountdropdown).click()
+        cy.get('.select2-dropdown.select2-dropdown--above li:nth-child(2)').click()
+        
+        
+
+
+
         // cy.get('[type="submit"]').click()
         
         });
