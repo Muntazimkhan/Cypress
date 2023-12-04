@@ -1,25 +1,20 @@
 // <reference types="cypress" />
+import Logout from "../../PageObjects/Logout";
 
-describe('Create Project ', () => {
+describe('Logout ', () => {
     beforeEach(() =>{
-        cy.visit('https://stagging.contentatscale.ai/login');
+        cy.visit('/login');
     })
 
-    it('Verify that the user is able to create a project', () => {
-        cy.get('[id="email"]').type('1t.aamer@gmail.com');
+    it('Verify that the user is able to logout', () => {
         
-        cy.get('[id="password"]').type('!Test123*');
-
-        cy.get('[class="submit"]').click();
-
-        cy.get('.drop-down.user-option').click()
-
-        let dropDown = '.dropdown-menu.dropdown-menu-right.pb-0.show  ';
-        cy.get(dropDown);
-
-        cy.contains('Logout').click()
-
-        cy.get('.field-area.login-area').should('contain.text', 'Welcome Back!')
+        const ln = new Logout();
+        ln.setEmail('1t.aamer@gmail.com');
+        ln.setPassword('!Test123*');
+        ln.clickLogin();
+        ln.clickDropdown();
+        ln.clickLogout();
+        ln.Verify();
         
     });
 

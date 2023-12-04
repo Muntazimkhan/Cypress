@@ -1,29 +1,18 @@
+import Login from "../../PageObjects/Login";
 
 describe('login ', () =>{
 
     beforeEach(() =>{
-        cy.visit('https://stagging.contentatscale.ai/login');
+        cy.visit('/login');
     });
 
     it('Verify that the user can Login successfully with valid data', () => {
-        cy.get('[id="email"]').type('1t.aamer@gmail.com');
         
-        cy.get('[id="password"]').type('!Test123*');
-
-        cy.get('[class="submit"]').click();
-
-        //Assertion
-
-        cy.get('.filter-area.mb-5').should('be.visible')
+        const ln=new Login();
+        ln.setEmail('1t.aamer@gmail.com');
+        ln.setPassword('!Test123*');
+        ln.clickLogin();
+        ln.Verify();
 
         });
-
-    it('Verify that the user can Login successfully with invalid data', () => {
-        cy.get('[id="email"]').type('1t.a amer@gmail.com');
-    
-        cy.get('[id="password"]').type('!Test123');
-
-        cy.get('[class="submit"]').click();
-    });
-   
 })

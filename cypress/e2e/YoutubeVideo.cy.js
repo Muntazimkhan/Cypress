@@ -1,11 +1,11 @@
 /// <reference types="cypress" />
 
-describe('Create Project ', () => {
+describe('Create post from Youtube Video ', () => {
     beforeEach(() =>{
-        cy.visit('https://stagging.contentatscale.ai/login');
+        cy.visit('/login');
     })
 
-    it('Verify that the user is able to create a project', () => {
+    it('Verify that the user is able to create a post from Youtube video', () => {
         cy.get('[id="email"]').type('1t.aamer@gmail.com');
         
         cy.get('[id="password"]').type('!Test123*');
