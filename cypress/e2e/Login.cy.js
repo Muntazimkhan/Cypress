@@ -1,18 +1,17 @@
-import Login from "../../PageObjects/Login";
+import Login from "../../POM/Loginpage";
+const LoginPage = new Login()
 
 describe('login ', () =>{
 
     beforeEach(() =>{
-        cy.visit('/login');
+        cy.visit('/');
     });
 
     it('Verify that the user can Login successfully with valid data', () => {
-        
-        const ln=new Login();
-        ln.setEmail('1t.aamer@gmail.com');
-        ln.setPassword('!Test123*');
-        ln.clickLogin();
-        ln.Verify();
+        LoginPage.setEmail()
+        LoginPage.setPassword()
+        LoginPage.submit()
+    
 
         });
 })

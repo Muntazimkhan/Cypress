@@ -1,20 +1,20 @@
-// <reference types="cypress" />
-import Logout from "../../PageObjects/Logout";
+import Logout from "../../POM/Logoutpage";
 
+const LogoutPage = new Logout();
 describe('Logout ', () => {
     beforeEach(() =>{
-        cy.visit('/login');
+        cy.visit('/');
     })
 
     it('Verify that the user is able to logout', () => {
         
-        const ln = new Logout();
-        ln.setEmail('1t.aamer@gmail.com');
-        ln.setPassword('!Test123*');
-        ln.clickLogin();
-        ln.clickDropdown();
-        ln.clickLogout();
-        ln.Verify();
+        LogoutPage.setEmail()
+        LogoutPage.setPassword()
+        LogoutPage.submit()
+        LogoutPage.clickDropdown()
+        LogoutPage.clickLogout()
+
+
         
     });
 

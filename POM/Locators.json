@@ -1,0 +1,24 @@
+{
+    
+    "loginUrl":"/login",
+    "emailField":"[id='email']",
+    "passowrdField":"[id='password']",
+    "clickLoginButton":".submit",
+    "clickDropdown":".drop-down.user-option",
+    "clickLogoutButton":"//i[contains(@class,'bx bx-power-off')]",
+    "clickProject": "'a', 'Projects'",
+    "ClickCreateProjectButton":".cs-secondary-btn .create-project",
+    "setProjectName": "#project-name",
+    "setProjectUrl": "#project-url",
+    "setProjectContext":"#project-context", 
+    "setMonthlyPostCount": "#monthly-post-count",
+    "setTargetAudience": "#target-audience",
+    "TovDropdown": ".project-fields.mx-auto div div:nth-child(6)",
+    "TOV": ".select2-results__option.select2-results__option--group li:nth-child(7)",
+    "languageDropdown": ".project-fields.mx-auto div div:nth-child(7)",
+    "Language": ".select2-dropdown.select2-dropdown--above li:nth-child(25)",
+    "Wordcountdropdown": ".project-fields.mx-auto div div:nth-child(8)",
+    "Wordcount": ".select2-dropdown.select2-dropdown--above li:nth-child(2)",
+    "clickSubmit": "[type='submit']"   
+    
+}

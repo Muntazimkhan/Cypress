@@ -1,5 +1,7 @@
-/// <reference types="cypress" />
-import createProject from "../../PageObjects/createProject";
+import Project from "../../POM/createProject";
+
+const   createProject = new Project()
+
 
 describe('Create Project ', () => {
     beforeEach(() =>{
@@ -8,23 +10,23 @@ describe('Create Project ', () => {
 
     it('Verify that the user is able to create a project', () => {
          
-        const ln = new createProject();
+        createProject.setEmail()
+        createProject.setPassword()
+        createProject.submit()
+        createProject.clickProject()
+        createProject.clickCreateProject()
+        createProject.setProjectName()
+        createProject.setProjectUrl()
+        createProject.setProjectContext()
+        createProject.setMonthlyPostCount()
+        createProject.setTargetAudience()
+        createProject.setTOV()
+        createProject.setLanguage()
+        createProject.setWordCount()
+        // createProject.clickSubmit()
 
-        ln.setEmail('1t.aamer@gmail.com');
-        ln.setPassword('!Test123*');
-        ln.clickLogin();
-        ln.clickProject();
-        ln.clickCreateProject();
-        ln.setProjectName('Automation Project');
-        ln.setProjectUrl('www.ibm.com/topics/automation');
-        ln.setProjectContext('In general usage.');
-        ln.setMonthlyPostCount(5);
-        ln.setTargetAudience('Students');
-        ln.setTOV(7);
-        ln.setLanguage('English');
-        ln.setWordCount(10);
-        // ln.clickSubmit();
-        // ln.Verify();
+        
+    
         
 
 
