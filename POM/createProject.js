@@ -21,12 +21,12 @@ class Project{
 
     clickProject()
     {
-        cy.contains(Locators.clickProject).click()
+        cy.get(Locators.clickProject).click()
     }
 
     clickCreateProject()
     {
-        cy.get(Locators.ClickCreateProjectButton).click({ force: true })
+        cy.get('#open_create_project_form').click({ force: true })
     }
 
     setProjectName()
@@ -63,15 +63,15 @@ class Project{
     
     setLanguage()
     {
-        let Languagedropdown = Locators.Languagedropdown;
-        cy.get(Locators.Languagedropdown).click()
+        let Languagedropdown = Locators.languageDropdown;
+        cy.get(Languagedropdown).click()
         cy.get(Locators.Language).click()
     }
     
     setWordCount()
     {
-        let Wordcountdropdown = Locators.Wordcountdropdown;
-        cy.get(Locators.Wordcountdropdown).click()
+        let WordcountDropdown = Locators.Wordcountdropdown;
+        cy.get(WordcountDropdown).click()
         cy.get(Locators.Wordcount).click()
     }
     

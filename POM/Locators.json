@@ -6,7 +6,7 @@
     "clickLoginButton":".submit",
     "clickDropdown":".drop-down.user-option",
     "clickLogoutButton":"//i[contains(@class,'bx bx-power-off')]",
-    "clickProject": "'a', 'Projects'",
+    "clickProject": ".list-unstyled.components.mb-5 li:nth-child(2)",
     "ClickCreateProjectButton":".cs-secondary-btn .create-project",
     "setProjectName": "#project-name",
     "setProjectUrl": "#project-url",
@@ -16,9 +16,9 @@
     "TovDropdown": ".project-fields.mx-auto div div:nth-child(6)",
     "TOV": ".select2-results__option.select2-results__option--group li:nth-child(7)",
     "languageDropdown": ".project-fields.mx-auto div div:nth-child(7)",
-    "Language": ".select2-dropdown.select2-dropdown--above li:nth-child(25)",
+    "Language": ".select2-dropdown.select2-dropdown--below li:nth-child(66) ",
     "Wordcountdropdown": ".project-fields.mx-auto div div:nth-child(8)",
-    "Wordcount": ".select2-dropdown.select2-dropdown--above li:nth-child(2)",
+    "Wordcount": ".select2-dropdown.select2-dropdown--below li:nth-child(3)",
     "clickSubmit": "[type='submit']"   
     
 }

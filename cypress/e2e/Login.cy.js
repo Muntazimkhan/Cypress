@@ -1,6 +1,6 @@
 import Login from "../../POM/Loginpage";
-const LoginPage = new Login()
-
+import data from '../fixtures/data.json'
+const {email,password}=data
 describe('login ', () =>{
 
     beforeEach(() =>{
@@ -8,9 +8,9 @@ describe('login ', () =>{
     });
 
     it('Verify that the user can Login successfully with valid data', () => {
-        LoginPage.setEmail()
-        LoginPage.setPassword()
-        LoginPage.submit()
+        Login.setEmail(email)
+        Login.setPassword(password)
+        Login.submit()
     
 
         });
