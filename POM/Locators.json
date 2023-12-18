@@ -19,6 +19,21 @@
     "Language": ".select2-dropdown.select2-dropdown--below li:nth-child(66) ",
     "Wordcountdropdown": ".project-fields.mx-auto div div:nth-child(8)",
     "Wordcount": ".select2-dropdown.select2-dropdown--below li:nth-child(3)",
-    "clickSubmit": "[type='submit']"   
+    "clickSubmit": "[type='submit']",
+    "OpenProject": "#project_6986",
+    "createPost": ".project-content-btn .cs-secondary-btn",
+    "clickNext": ".cs-secondary-btn.next-content",
+    "typeKeyowrd": "#new-keyword",
+    "TypeDescription": "#new-keyword-context",
+    "keywrodDropdown": "#from-keyword-section div div:nth-child(4)",
+    "keywordwordcount": "ul#select2-new-keyword-word-count-results li:nth-child(3)",
+    "clickWritepost": "Write Post Now",
+    "blogPost": ".from-blog",
+    "BlogURL": "#content-from-blog-url",
+    "BlogDescription": "input#new-blog-url-keyword",
+    "BlogpostDropdown": "div#from-blog-section div div div:nth-child(3)",
+    "Blogwordcount": ".select2-dropdown.select2-dropdown--below li:nth-child(4)",
+    "blogAdditionalcontext": "textarea#new-blog-post-context"
+
     
 }

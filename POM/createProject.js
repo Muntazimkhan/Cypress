@@ -2,16 +2,16 @@ import Locators from '../POM/Locators.json'
 
 class Project{
 
-    setEmail() 
+    setEmail(email) 
     {
 
-        cy.get(Locators.emailField).type('1t.aamer@gmail.com')
+        cy.get(Locators.emailField).type(email)
     }
 
-    setPassword() 
+    setPassword(password) 
     {
 
-        cy.get(Locators.passowrdField).type('!Test123*')
+        cy.get(Locators.passowrdField).type(password)
     }
 
     submit() 

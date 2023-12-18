@@ -1,4 +1,7 @@
 import Project from "../../POM/createProject";
+import data from '../fixtures/data.json'
+const {email, password} = data;
+
 
 const   createProject = new Project()
 
@@ -10,8 +13,8 @@ describe('Create Project ', () => {
 
     it('Verify that the user is able to create a project', () => {
          
-        createProject.setEmail()
-        createProject.setPassword()
+        createProject.setEmail(email)
+        createProject.setPassword(password)
         createProject.submit()
         createProject.clickProject()
         createProject.clickCreateProject()

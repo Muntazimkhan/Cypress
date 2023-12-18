@@ -1,4 +1,8 @@
 import Logout from "../../POM/Logoutpage";
+import data from '../fixtures/data.json'
+
+const {email,password}=data
+
 
 const LogoutPage = new Logout();
 describe('Logout ', () => {
@@ -8,8 +12,8 @@ describe('Logout ', () => {
 
     it('Verify that the user is able to logout', () => {
         
-        LogoutPage.setEmail()
-        LogoutPage.setPassword()
+        LogoutPage.setEmail(email)
+        LogoutPage.setPassword(password)
         LogoutPage.submit()
         LogoutPage.clickDropdown()
         LogoutPage.clickLogout()
