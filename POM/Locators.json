@@ -33,7 +33,26 @@
     "BlogDescription": "input#new-blog-url-keyword",
     "BlogpostDropdown": "div#from-blog-section div div div:nth-child(3)",
     "Blogwordcount": ".select2-dropdown.select2-dropdown--below li:nth-child(4)",
-    "blogAdditionalcontext": "textarea#new-blog-post-context"
+    "blogAdditionalcontext": "textarea#new-blog-post-context",
+    "Fromyoutube": ".from-youtube",
+    "YoutubeURL": "#content-from-youtube-url",
+    "YoutubeDescription": "input#new-youtube-keyword",
+    "YoutubepostDropdown": "div#from-youtube-section div div div:nth-child(3)",
+    "Youtubewordcount": ".select2-dropdown.select2-dropdown--below li:nth-child(3)",
+    "YoutubeAdditionalcontext": "textarea#new-youtube-url-context",
+    "Frompodcast": ".from-podcast",
+    "podcastURL": "input#content-from-podcast-url",
+    "podcastDescription": "input#new-itunes-keyword",
+    "podcastDropdown": "div#from-podcast-section div div div:nth-child(3)",
+    "podcastwordcount": ".select2-dropdown.select2-dropdown--below li:nth-child(4)",
+    "podcastAdditionalcontext": "textarea#new-itunes-url-context",
+    "Fromaudio": ".from-file",
+    "AudioURL": "input#content-from-custom-url",
+    "AudioDescritpion": "input#new-audio-keyword",
+    "Audioadditionalcontext": "textarea#new-audio-url-context",
+    "AudioDropdown": "div#from-custom-section div div div:nth-child(3)",
+    "Audiowordcount": ".select2-dropdown.select2-dropdown--below li:nth-child(1)"
+    
 
     
 }
