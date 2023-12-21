@@ -1,4 +1,10 @@
-/// <reference types="cypress" />
+import document from "../../POM/Document";
+import data from '../fixtures/data.json'
+
+const {email, password} = data
+
+const Document = new document
+
 
 describe('Create post from Document ', () => {
     beforeEach(() =>{
@@ -6,31 +12,22 @@ describe('Create post from Document ', () => {
     })
 
     it('Verify that the user is able to create a post from Document', () => {
-        cy.get('[id="email"]').type('1t.aamer@gmail.com');
+      
+        Document.setEmail(email);
+        Document.setPassword(password);
+        Document.submit();
+        Document.clickProject();
+        Document.openProject();
+        Document.clickCreatePost();
+        Document.clickFromdocument();
+        Document.clickNext();
+        Document.UploadDocument();
+        Document.typeKeywords();
+        Document.typeDescription();
+        // Document.clickwritePost();
         
-        cy.get('[id="password"]').type('!Test123*');
-
-        cy.get('[class="submit"]').click();
-
-        cy.contains('a', 'Projects').click()
-
-        cy.get('#project_6986').contains('Artificial Intelligence').click({ force: true })
-
-        cy.get('.project-content-btn .cs-secondary-btn ').click({ force: true })
-
-        cy.get('.from-doc').click({ force: true })
-
-        cy.get('.cs-secondary-btn.next-content').click()
-
-        // cy.get('input#content-from-doc-file').click()
-
-        cy.get('input#n#new-doc-keyword').type('Files')
-
-        cy.get('textarea#new-doc-post-context').type('Additional Context')
+     
 
 
-        // cy.contains('Write Post Now').click()
-        
-    });
-
-})
+});
+});

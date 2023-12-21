@@ -51,7 +51,16 @@
     "AudioDescritpion": "input#new-audio-keyword",
     "Audioadditionalcontext": "textarea#new-audio-url-context",
     "AudioDropdown": "div#from-custom-section div div div:nth-child(3)",
-    "Audiowordcount": ".select2-dropdown.select2-dropdown--below li:nth-child(1)"
+    "Audiowordcount": ".select2-dropdown.select2-dropdown--below li:nth-child(1)",
+    "Fromdocument" : ".from-doc",
+    "typedocumentKeyword": "input#new-doc-keyword",
+    "typedocumentDescription": "textarea#new-doc-post-context",
+    "ClickAID": ".list-unstyled.components.mb-5 li:nth-child(4)",
+    "TypeaiURL": "input#fetch_url_input",
+    "clickfetchURL": "button#fetch_url_button",
+    "checkAIcontent": "button#check_ai_button",
+    "rewriteAIcontent": "button#rewrite_all_sentences"
+    
     
 
     

@@ -35,5 +35,6 @@ Cypress.on('uncaught:exception', (err, runnable) => {
   // Make sure to add them before or after the Cypress.on() method, depending on your requirements.
   
   /// <reference types="cypress" />
+  import 'cypress-file-upload';
 
   import 'cypress-xpath';
