@@ -30,6 +30,10 @@ class Logout{
         cy.xpath(Locators.clickLogoutButton).click()
     }
 
+    verifyLogout(){
+        cy.get(Locators.VerifyLogout).should('contain','Welcome Back!');
+    }
+
 }
 
 export default Logout;

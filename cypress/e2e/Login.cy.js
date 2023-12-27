@@ -11,6 +11,8 @@ describe('login ', () =>{
         Login.setEmail(email)
         Login.setPassword(password)
         Login.submit()
+        Login.verifyButton()
+
     
 
         });

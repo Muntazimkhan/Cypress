@@ -4,8 +4,10 @@
     "emailField":"[id='email']",
     "passowrdField":"[id='password']",
     "clickLoginButton":".submit",
+    "VerifyLogin": ".filter-fields .cs-secondary-btn",
     "clickDropdown":".drop-down.user-option",
     "clickLogoutButton":"//i[contains(@class,'bx bx-power-off')]",
+    "VerifyLogout": ".form-section",
     "clickProject": ".list-unstyled.components.mb-5 li:nth-child(2)",
     "ClickCreateProjectButton":".cs-secondary-btn .create-project",
     "setProjectName": "#project-name",
@@ -55,11 +57,8 @@
     "Fromdocument" : ".from-doc",
     "typedocumentKeyword": "input#new-doc-keyword",
     "typedocumentDescription": "textarea#new-doc-post-context",
-    "ClickAID": ".list-unstyled.components.mb-5 li:nth-child(4)",
-    "TypeaiURL": "input#fetch_url_input",
-    "clickfetchURL": "button#fetch_url_button",
-    "checkAIcontent": "button#check_ai_button",
-    "rewriteAIcontent": "button#rewrite_all_sentences"
+    "ClickAID": ".list-unstyled.components.mb-5 li:nth-child(4)"
+    
     
     
 

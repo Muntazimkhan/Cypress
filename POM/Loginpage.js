@@ -18,6 +18,11 @@ class Login {
     {
         cy.get(Locators.clickLoginButton).click()
     }
+
+    verifyButton(){
+        cy.get(Locators.VerifyLogin).should('be.visible');
+
+    }
 }
 
 export default new Login;

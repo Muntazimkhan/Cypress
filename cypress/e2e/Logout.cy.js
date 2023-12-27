@@ -17,6 +17,7 @@ describe('Logout ', () => {
         LogoutPage.submit()
         LogoutPage.clickDropdown()
         LogoutPage.clickLogout()
+        LogoutPage.verifyLogout()
 
 
         

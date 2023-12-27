@@ -19,12 +19,13 @@ describe('Create fetch data from link ', () => {
         AIDetector.typeURL()
         AIDetector.clickFetchURL()
         //Check for AI-Content 
+        cy.wait(30000)
         AIDetector.checkAIcontent()
         //Rewrite All AI Sentences
         cy.wait(25000);
         AIDetector.rewriteAllaisentences()
-        cy.get('button.swal2-confirm.swal2-styled.swal2-default-outline').click(force , true);
-        cy.wait(25000);
+        // cy.get('button.swal2-confirm.swal2-styled.swal2-default-outline').click(force , true);
+        // cy.wait(25000);
 
     });
 
