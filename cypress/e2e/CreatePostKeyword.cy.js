@@ -16,6 +16,7 @@ describe("Create post from Keyword ", () => {
     keyword.submit()
     keyword.clickProject()
     keyword.openProject()
+   
     keyword.clickCreatePost()
     keyword.clickNext()
     keyword.typeKeywords()

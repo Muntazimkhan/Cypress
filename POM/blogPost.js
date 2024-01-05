@@ -25,6 +25,7 @@ class Blogpost{
     }
 
     openProject(){
+        cy.get('#_-Color').click({force: true})
         cy.get(Locators.OpenProject).contains("Artificial Intelligence").click({force:true})
     }
 

@@ -23,7 +23,7 @@
     "Wordcount": ".select2-dropdown.select2-dropdown--below li:nth-child(3)",
     "clickSubmit": "[type='submit']",
     "OpenProject": "#project_6986",
-    "createPost": ".project-content-btn .cs-secondary-btn",
+    "createPost": ".project-content-btn > .cs-secondary-btn",
     "clickNext": ".cs-secondary-btn.next-content",
     "typeKeyowrd": "#new-keyword",
     "TypeDescription": "#new-keyword-context",
